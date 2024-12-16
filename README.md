@@ -108,7 +108,7 @@ You can use [7zip](https://www.7-zip.org/) to convert .cbr and .cb7 files to .cb
 
 ## Credits
 
-
+Thanks to avalonv for creating the original [reCBZ](https://github.com/avalonv/reCBZ).
 
 Thanks to aerkalov for creating [Ebooklib](https://github.com/aerkalov/ebooklib), which allows EPUB conversion.
 
