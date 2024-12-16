@@ -1,10 +1,10 @@
-import textwrap
-import signal
 import platform
-from re import split
+import signal
+import textwrap
+from functools import wraps
 from multiprocessing import Pool
 from multiprocessing.pool import ThreadPool
-from functools import wraps
+from re import split
 
 import reCBZ.config as config
 

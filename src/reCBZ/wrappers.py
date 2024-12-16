@@ -1,11 +1,10 @@
-import time
 import re
+import time
 from pathlib import Path
-
-from PIL import UnidentifiedImageError
 
 import reCBZ
 import reCBZ.config as config
+from PIL import UnidentifiedImageError
 from reCBZ.archive import ComicArchive
 from reCBZ.util import human_bytes, pct_change, shorten, mylog
 
