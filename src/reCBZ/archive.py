@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import re
-import time
 import shutil
 import tempfile
-from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED, BadZipFile
+import time
 from functools import partial
-from pathlib import Path
 from itertools import chain
-
-from PIL import Image, UnidentifiedImageError
+from pathlib import Path
+from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED, BadZipFile
 
 import reCBZ
 import reCBZ.config as config
+from PIL import Image, UnidentifiedImageError
 from reCBZ.formats import *
 from reCBZ.util import mylog, map_workers, worker_sigint_CTRL_C, human_sort
 
