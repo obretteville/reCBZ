@@ -18,9 +18,9 @@ def print_title() -> None:
     if align + 22 > config.term_width() or align < 0:
         align = 0
     align = align * ' '
-    title_multiline = (f"{align}┬─┐┌─┐┌─┐┌┐ ┌─┐ ┌─┐┬ ┬\n"
-                       f"{align}├┬┘├┤ │  ├┴┐┌─┘ ├─┘└┬┘\n"
-                       f"{align}┴└─└─┘└─┘└─┘└─┘o┴   ┴")
+    title_multiline = (f"{align}┬─┐┌─┐┌─┐┌┐ ┌─┐ ┌─┐┬ ┬ ──┐\n"
+                       f"{align}├┬┘├┤ │  ├┴┐┌─┘ ├─┘└┬┘┌──┘\n"
+                       f"{align}┴└─└─┘└─┘└─┘└─┘o┴   ┴ └──")
     print(title_multiline)
 
 
