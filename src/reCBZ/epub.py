@@ -1,3 +1,31 @@
+# Copyright 2022 Aleksandar Erkalović, Gwyn Vales
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the Affero GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the Affero GNU General Public License for more
+# details.
+# You should have received a copy of the Affero GNU General Public License along
+# with this program. If not, see <https://www.gnu.org/licenses/agpl-3.0.en.html>
+#
+# 'ebooklib', authored by Aleksandar Erkalović, is licensed under the AGPL, and we
+# are linking to it, therefore AGPL applies to this module as well. You may NOT
+# distirubte derivatives using this module (i.e. epub.py) without also
+# distributing the source code, even over a network, and any modifications to
+# either epub.py or ebooklib must be licensed under the AGPL as well.
+# non-commerical private use is explicitly permitted.
+# WORK IN PROGRESS
+from uuid import uuid4
+
+import reCBZ.config as config
+from ebooklib import epub
+from reCBZ.util import mylog
+
+POP_COVER = True
+
+
 def single_chapter_epub(name: str, pages: list) -> str:
     book = epub.EpubBook()
 
