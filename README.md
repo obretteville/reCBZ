@@ -1,14 +1,19 @@
-# reCBZ2 - comic book repacker
+# reCBZ - comic book repacker
 
-### Please note this is a fork of [avalonv/reCBZ](https://github.com/avalonv/reCBZ).
+### Please note this is a fork of [BelardoA/reCBZ2](https://github.com/BelardoA/reCBZ2).
+This fork was created to:
+* support rar/cbr reading (but not writing),
+* add Kindle Scribe profile.
+ 
+[![PyPI version](https://badge.fury.io/py/reCBZ3.svg)](https://badge.fury.io/py/reCBZ3)
+[![Downloads](https://pepy.tech/badge/reCBZ3)](https://pepy.tech/project/reCBZ3)
+[![Downloads](https://pepy.tech/badge/reCBZ3/month)](https://pepy.tech/project/reCBZ3)
+[![Downloads](https://pepy.tech/badge/reCBZ3/week)](https://pepy.tech/project/reCBZ3)
+
+![GitHub issues](https://img.shields.io/github/issues/obretteville/reCBZ)
+
+### Abstract from `BelardoA`
 This fork was created to fix some issues with the original code and to add some new features. The original code was not being maintained and had some issues that needed to be fixed. This fork is being maintained and will be updated with new features and bug fixes.
-
-[![PyPI version](https://badge.fury.io/py/reCBZ2.svg)](https://badge.fury.io/py/reCBZ2)
-[![Downloads](https://pepy.tech/badge/reCBZ2)](https://pepy.tech/project/reCBZ2)
-[![Downloads](https://pepy.tech/badge/reCBZ2/month)](https://pepy.tech/project/reCBZ2)
-[![Downloads](https://pepy.tech/badge/reCBZ2/week)](https://pepy.tech/project/reCBZ2)
-
-![GitHub issues](https://img.shields.io/github/issues/BelardoA/reCBZ2)
 
 ### Abstract from `avalonv`
 
