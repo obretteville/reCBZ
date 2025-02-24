@@ -10,7 +10,7 @@ This fork was created to:
 [![Downloads](https://pepy.tech/badge/reCBZ3/month)](https://pepy.tech/project/reCBZ3)
 [![Downloads](https://pepy.tech/badge/reCBZ3/week)](https://pepy.tech/project/reCBZ3)
 
-![GitHub issues](https://img.shields.io/github/issues/obretteville/reCBZ)
+![GitHub issues](https://img.shields.io/github/issues/obretteville/reCBZ3)
 
 ### Abstract from `BelardoA`
 This fork was created to fix some issues with the original code and to add some new features. The original code was not being maintained and had some issues that needed to be fixed. This fork is being maintained and will be updated with new features and bug fixes.
