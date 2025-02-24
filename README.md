@@ -2,6 +2,7 @@
 
 ### Please note this is a fork of [BelardoA/reCBZ2](https://github.com/BelardoA/reCBZ2).
 This fork was created to:
+* support bmp images,
 * support rar/cbr reading (but not writing),
 * add Kindle Scribe profile.
  
