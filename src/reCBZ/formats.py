@@ -58,5 +58,16 @@ class Png(LosslessFmt):
         img.save(dest, format='PNG', optimize=True, compress_level=9)
 
 
-FormatList = (Jpeg, WebpLossy, WebpLossless, Png)
+class Bmp(LosslessFmt):
+    name:str = 'bmp'
+    ext:tuple = '.bmp',
+    desc:str = 'BMP'
+    mime:str = 'image/bmp'
+
+    @classmethod
+    def save(cls, img:Image.Image, dest):
+        img.save(dest, format='BMP', optimize=True, compress_level=9)
+
+
+FormatList = (Jpeg, WebpLossy, WebpLossless, Png, Bmp)
 FormatDict = {cls.name:cls for cls in FormatList}

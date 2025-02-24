@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reCBZ"
-version = "0.7.5"
+version = "0.8.1"
 description = "Utility for repacking and optmizing manga & comic book archives"
 readme = "README.md"
 license = { text = "GPLv3" }
@@ -21,6 +21,7 @@ keywords = ["manga", "comics", "cbz", "ebook", "epub"]
 dependencies = [
     "pillow >= 9.1",
     "ebooklib >= 0.18",
+    "rarfile >= 4.2",
 ]
 requires-python = ">=3.9"
 
@@ -34,7 +35,7 @@ Homepage = "https://github.com/avalonv/reCBZ"
 recbz = "reCBZ.__main__:main"
 
 [tool.bumpver]
-current_version = "0.7.5"
+current_version = "0.8.1"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 commit = true

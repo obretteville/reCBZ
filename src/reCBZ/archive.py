@@ -7,7 +7,7 @@ from functools import partial
 from itertools import chain
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED, BadZipFile
-
+from rarfile import RarFile, BadRarFile
 import reCBZ
 import reCBZ.config as config
 from PIL import Image, UnidentifiedImageError
@@ -180,6 +180,8 @@ class Page():
                 raise KeyError(f"Image.format returned None")
             elif PIL_fmt == "PNG":
                 return Png
+            elif PIL_fmt == "BMP":
+                return Bmp
             elif PIL_fmt == "JPEG":
                 return Jpeg
             elif PIL_fmt == "WEBP":
@@ -279,7 +281,12 @@ class ComicArchive():
         try:
             source_zip = ZipFile(self.fp)
         except BadZipFile as err:
-            raise ValueError(f"Fatal: '{self.fp}': not a zip file")
+            try:
+                source_zip = RarFile(self.fp)
+            except BadRarFile as err:
+                raise ValueError(f"Fatal: '{self.fp}': not a rar file")
+            if source_zip is None:
+                raise ValueError(f"Fatal: '{self.fp}': not a zip file")
 
         compressed_files = source_zip.namelist()
         assert len(compressed_files) >= 1, 'no files in archive'

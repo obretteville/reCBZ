@@ -100,6 +100,13 @@ class KindleVoyage(Kindle):
     gray = True
 
 
+class KindleScribe(Kindle):
+    nickname = 'KS'
+    desc = 'Kindle Scribe'
+    size = (1860, 2480)
+    gray = True
+
+
 ProfileList = (KoboForma, KoboLibra, KoboElipsa, KoboClaraHD, Kindle68,
-                 Kindle300, Kindle212, Kindle167, KindleOasis, KindleVoyage)
+                 Kindle300, Kindle212, Kindle167, KindleOasis, KindleVoyage, KindleScribe)
 ProfileDict = {cls.nickname:cls for cls in ProfileList}
