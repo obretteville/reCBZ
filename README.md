@@ -4,7 +4,7 @@
 This fork was created to:
 * support bmp images,
 * support rar/cbr reading (but not writing),
-* add Kindle Scribe profile.
+* Kindle Scribe profile added (KS).
  
 [![PyPI version](https://badge.fury.io/py/reCBZ3.svg)](https://badge.fury.io/py/reCBZ3)
 [![Downloads](https://pepy.tech/badge/reCBZ3)](https://pepy.tech/project/reCBZ3)
